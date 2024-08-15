@@ -1,0 +1,16 @@
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #invoice-preview,
+    #invoice-preview * {
+        visibility: visible;
+    }
+    #invoice-preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 210mm; /* Set width to A4 width */
+        margin: 0 auto; /* Center the content horizontally */
+    }
+}
